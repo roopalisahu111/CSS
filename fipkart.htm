@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        body{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+      }
+      .form{
+        display: flex;
+      }
+
+      .form_left{
+        border: 1px solid;
+        height: 70vh;
+        width: 22vw;
+        padding: 20px;
+        display: flex;
+        /* we use flex for text in bottom */
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgb(85, 85, 253);
+        color: white;
+}
+.form_right{
+  border: 1px solid;
+        height: 70vh;
+        width: 30vw;
+        padding: 20px 30px;
+        position: relative;
+        border-left: none;
+        /* connect right to left */
+
+}
+label{
+  font-size: 20px;
+} 
+input{
+  border: none;
+  outline: none;
+  /* outline for input box not show  */
+  width: 300px;
+
+}
+.form_right p{
+  margin-top: 30px;
+}
+button{
+  background-color: orangered;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 90%;
+}
+a{
+  text-decoration: none;
+  /* no underline on link */
+}
+  
+</style>
+</head>
+
+<body>
+  <div class="form">
+    <div class="form_left">
+      <div class="login">
+        <h1>Login</h1>
+        <p style="margin-top: 20px;">Get access to your Orders, Wishlist and Recommendations</p>
+   
+      </div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtGw0JmBoqqj19Pd-yBxZ9OBKfO6NvnvKCpw&usqp=CAU" alt="flipkart logo" width="300px" height="150px">
+  
+    </div>
+    <div class="form_right">
+      <label for="">Enter Email/Mobile number</label><br>
+      <input type="email" placeholder="Enter Email/Mobile number" >
+      <hr>
+<!-- margin top -->
+      <p>By continuing, you agree to Flipkart's <a href="">Terms of Use</a> and <a href="">Privacy Policy.</a></p>
+      <button>Request OTP</button>
+      <div style="position: absolute; bottom: 40px;">
+<!-- positing  -->
+      <a href="">New to Flipkart</a> <a href=""> Create an account</a>
+    </div></div>
+  </div>
+
+</div>
+</body>
+</html>
